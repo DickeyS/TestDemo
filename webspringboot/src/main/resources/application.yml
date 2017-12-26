@@ -1,0 +1,20 @@
+#tomcat配置
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+  address: localhost
+
+spring:
+  #指定applictaion-database.yml文件
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/cm?characterEncoding=utf8
+    username: root
+    password: shidi
+    driver-class-name: com.mysql.jdbc.Driver
+    #使用c3p0数据源
+    type: org.apache.commons.dbcp.BasicDataSource
+
+

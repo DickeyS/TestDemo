@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Jedis/Jedis.iml" filepath="$PROJECT_DIR$/Jedis/Jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestDemo.iml" filepath="$PROJECT_DIR$/TestDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webspringboot/webspringboot.iml" filepath="$PROJECT_DIR$/webspringboot/webspringboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/webssm/webssm.iml" filepath="$PROJECT_DIR$/webssm/webssm.iml" />
     </modules>
   </component>
