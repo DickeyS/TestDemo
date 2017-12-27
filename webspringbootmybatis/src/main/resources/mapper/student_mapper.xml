@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springbootmybatis.mapper.StudentMapper">
+    <select id="getStudentVO" parameterType="com.springbootmybatis.VO.StudentVO" resultType="com.springbootmybatis.VO.StudentVO">
+        select * from student
+        <trim prefix="where" prefixOverrides="AND">
+            <if test="name != null">name = #{name}</if>
+            <if test="age != 0">age = #{age}</if>
+        </trim>
+    </select>
+</mapper>

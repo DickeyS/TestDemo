@@ -28,6 +28,7 @@
         <module>Jedis</module>
       <module>webssm</module>
       <module>webspringboot</module>
+        <module>webspringbootmybatis</module>
     </modules>
     <groupId>com.shidi</groupId>
   <artifactId>TestDemo</artifactId>

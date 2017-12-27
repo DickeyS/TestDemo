@@ -8,13 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Jedis" />
         <module name="webspringboot" />
+        <module name="webspringbootmybatis" />
         <module name="webssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Jedis" target="1.5" />
       <module name="TestDemo" target="1.5" />
+      <module name="web-springboot-mybatis" target="1.5" />
       <module name="webspringboot" target="1.5" />
+      <module name="webspringbootmybatis" target="1.5" />
       <module name="webssm" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import javax.sql.DataSource;
 import java.sql.SQLException;
 
 
@@ -14,7 +15,7 @@ import java.sql.SQLException;
 public class DataSourcesTest {
 
     @Autowired
-    public javax.sql.DataSource dataSource;
+    public DataSource dataSource;
 
     @Test
     public void test(){
