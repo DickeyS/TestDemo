@@ -14,7 +14,7 @@ import java.sql.SQLException;
 @SpringBootTest
 public class DataSourcesTest {
 
-    @Autowired
+    /*@Autowired
     public DataSource dataSource;
 
     @Test
@@ -24,5 +24,5 @@ public class DataSourcesTest {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }

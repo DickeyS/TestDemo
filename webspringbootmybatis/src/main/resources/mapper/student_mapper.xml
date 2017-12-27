@@ -5,8 +5,31 @@
     <select id="getStudentVO" parameterType="com.springbootmybatis.VO.StudentVO" resultType="com.springbootmybatis.VO.StudentVO">
         select * from student
         <trim prefix="where" prefixOverrides="AND">
-            <if test="name != null">name = #{name}</if>
-            <if test="age != 0">age = #{age}</if>
+            <if test="name != null">AND name = #{name}</if>
+            <if test="age != 0">AND age = #{age}</if>
         </trim>
     </select>
+
+    <sql id="insert_student">
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="age != 0">age,</if>
+        </trim>
+    </sql>
+
+    <sql id="insert_student_value">
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="name != null">#{name},</if>
+            <if test="age != 0">#{age},</if>
+        </trim>
+    </sql>
+
+
+    <insert id="addStudentVO" parameterType="com.springbootmybatis.VO.StudentVO">
+        INSERT  INTO student
+        <include refid="insert_student"/>
+        VALUES
+        <include refid="insert_student_value"/>
+
+    </insert>
 </mapper>

@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface StudentMapper {
 
     StudentVO getStudentVO(StudentVO studentVO);
+
+    int addStudentVO(StudentVO studentVO);
 }

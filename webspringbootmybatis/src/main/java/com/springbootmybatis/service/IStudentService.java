@@ -6,4 +6,6 @@ import com.springbootmybatis.VO.StudentVO;
 public interface IStudentService {
 
     StudentVO getStudentVO(StudentVO studentVO);
+
+    int addStudentVO(StudentVO studentVO);
 }

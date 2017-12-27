@@ -29,6 +29,7 @@
       <module>webssm</module>
       <module>webspringboot</module>
         <module>webspringbootmybatis</module>
+      <module>web-springboot-jpa</module>
     </modules>
     <groupId>com.shidi</groupId>
   <artifactId>TestDemo</artifactId>

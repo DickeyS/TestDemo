@@ -19,7 +19,7 @@
         <junit.version>4.12</junit.version>
     </properties>
     <dependencies>
-        <dependency>
+           <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
@@ -55,6 +55,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <!--logging-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
             <version>${springboot.version}</version>
         </dependency>
     </dependencies>
