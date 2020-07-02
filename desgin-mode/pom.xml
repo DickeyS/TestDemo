@@ -12,7 +12,7 @@
     <artifactId>desgin.mode</artifactId>
     <properties>
         <springboot.version>1.5.8.RELEASE</springboot.version>
-        <mysql.version>5.0.8</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <mybatis.springboot.version>1.0.0</mybatis.springboot.version>
         <dbcp2.version>1.4</dbcp2.version>
     </properties>
